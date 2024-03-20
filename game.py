@@ -21,7 +21,7 @@ for i in range(max_attempts):
         print("Ya has intentado con esa letra. Intenta con otra.")
         continue
     # Agregar la letra a la lista de letras adivinadas
-    if letter in secret_word:
+    if letter and letter in secret_word:
         print("¡Bien hecho! La letra está en la palabra.")
         guessed_letters.append(letter)
         # Verificar si la letra está en la palabra secreta
